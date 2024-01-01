@@ -1,0 +1,18 @@
+.projects-heading-conatiner {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 20vw;
+}
+
+.projects-heading {
+    color: #fff;
+    text-align: left;
+    letter-spacing: 0;
+    font-family: Teko,sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    position: relative;
+}

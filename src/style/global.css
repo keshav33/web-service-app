@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Teko");
+@import url("https://fonts.googleapis.com/css?family=Archivo");
+
+:root {
+    --navbar-height: 80px;
+    --footer-height: 60px;
+}
+
+.root-container {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #181818;
+}
+
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.justifyCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.alignCenter {
+    display: flex;
+    align-items: center;
+}
+
+.flexSpaceAround {
+    display: flex;
+    justify-content: space-around;
+}
+

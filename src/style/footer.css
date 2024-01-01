@@ -1,0 +1,35 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: var(--footer-height);
+    background-color: #181818;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-separator {
+    opacity: 0.6;
+    width: 90%;
+}
+
+.footer-copyright-container {
+    padding-top: 15px;
+    padding-left: 5vw;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.social-media-icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 5vw;
+}
+
+.footer-social-media-icon {
+    cursor: pointer;
+    width: 20px;
+    padding-bottom: 15px;
+}

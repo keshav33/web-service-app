@@ -1,0 +1,96 @@
+.project-card {
+    position: relative;
+    height: 620px;
+    width: 80vw;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.project-card-background {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition: all 0.3s;
+}
+
+.project-card-content-name {
+    position: absolute;
+    top: 120px;
+    left: 60px;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: Archivo Black,sans-serif;
+    color: #fff;
+    z-index: 2;
+}
+
+.project-card-content-description {
+    position: absolute;
+    top: 220px;
+    left: 60px;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Archivo Black,sans-serif;
+    color: #fff;
+    z-index: 2;
+    width: 40%;
+}
+
+.project-card-view-more-details-button {
+    position: absolute;
+    top: 460px;
+    left: 60px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+    background-color: transparent; 
+    border-style: solid;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.project-card-view-more-details-button:hover {
+    color: #181818;
+    background-color: #fff;
+}
+
+.project-card-hidden {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+@media(prefers-reduced-motion) {
+    .project-card-hidden {
+        transition: none;
+    }
+}
+
+.project-card-show {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+    .project-card {
+        height: 450px;
+    }
+
+    .project-card-content-name {
+        top: 60px
+    }
+
+    .project-card-content-description {
+        top: 140px
+    }
+
+    .project-card-view-more-details-button {
+        top: 360px
+    }
+}
