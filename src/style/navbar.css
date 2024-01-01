@@ -33,3 +33,8 @@
 .navbar-link:hover {
     opacity: .52;
 }
+
+.navbar-link > a {
+    color: inherit;
+    text-decoration: none;
+}

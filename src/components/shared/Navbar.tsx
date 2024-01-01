@@ -1,5 +1,6 @@
 import React from "react";
 import "../../style/navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const scrollToProjects = () => {
@@ -14,8 +15,12 @@ const Navbar = () => {
         <div className="navbar-link" onClick={scrollToProjects}>
           Projects
         </div>
-        <div className="navbar-link">About Us</div>
-        <div className="navbar-link">Contact Us</div>
+        <div className="navbar-link">
+          <Link to="/about-us">About Us</Link>
+        </div>
+        <div className="navbar-link">
+          <Link to="/contact-us">Contact Us</Link>
+        </div>
       </div>
     </div>
   );
