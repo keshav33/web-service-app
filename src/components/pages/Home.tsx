@@ -3,6 +3,10 @@ import "../../style/home.css";
 import Projects from "./Projects";
 
 const Home = () => {
+  const scrollToProjects = () => {
+    const projectsElement = document.getElementById("projects");
+    projectsElement?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div>
       <div className="home-container justifyCenter alignCenter">
@@ -14,9 +18,14 @@ const Home = () => {
             TeknoMonk crafts your ideas to reality with ease so that you can
             take a fresh breeze
           </h2>
-          <button className="home-get-in-touch-button">Get in touch</button>
         </div>
         <div className="home-gradient-splash" />
+        <button
+          className="home-view-projects-button"
+          onClick={scrollToProjects}
+        >
+          Have a glimpse of our work
+        </button>
       </div>
       <Projects />
     </div>
