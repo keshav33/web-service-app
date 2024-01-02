@@ -22,7 +22,7 @@ const Home = () => {
         </div>
         <div className="home-gradient-splash" />
         <button
-          className="home-view-projects-button"
+          className="home-view-projects-button marginTop100"
           onClick={scrollToProjects}
         >
           Have a glimpse of our work

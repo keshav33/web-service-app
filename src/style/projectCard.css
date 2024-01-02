@@ -2,8 +2,8 @@
   display: flex;
   height: 420px;
   width: 80vw;
-  margin-top: 90px;
-  margin-bottom: 90px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   z-index: 1;
   gap: 120px;
 }
@@ -50,14 +50,14 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 800px;
-  height: 400px;
+  width: 900px;
+  height: 500px;
   transition: all 0.3s;
   border-radius: 10px;
 }
 
 .project-card-content-name {
-  margin-top: 40px;
+  margin-top: 80px;
   font-size: 54px;
   font-weight: 600;
   font-family: Archivo Black, sans-serif;
@@ -73,7 +73,7 @@
   font-family: Archivo Black, sans-serif;
   color: #fff;
   z-index: 2;
-  width: 80%;
+  width: 100%;
   opacity: 0.8;
 }
 
