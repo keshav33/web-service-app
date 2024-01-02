@@ -20,7 +20,7 @@
   position: relative;
   z-index: 2;
   width: 80%;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .home-subheading {
@@ -39,7 +39,7 @@
 }
 
 .home-gradient-splash {
-  background: linear-gradient(112deg, #ce225a, #523adf, #181818);
+  background: linear-gradient(-45deg, #ce225a, #523adf, #181818);
   box-shadow: inset 50px 0px 60px 40px #181818;
   background-size: 600% 600%;
 
@@ -54,7 +54,7 @@
   height: 80vh;
   width: 100%;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.5;
   z-index: 1;
   border-radius: 10px;
 }
@@ -104,6 +104,12 @@
   }
 }
 
+.home-projects-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .home-view-projects-button {
   font-family: Teko, sans-serif;
   color: #fff;
@@ -121,6 +127,49 @@
 .home-view-projects-button:hover {
   color: #181818;
   background-color: #fff;
+}
+
+.home-projects-button-divider {
+  display: flex;
+  align-items: center;
+  font-family: Teko, sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 30px;
+  z-index: 2;
+}
+
+.scroll-mouse {
+  width: 50px;
+  height: 90px;
+  border: 3px solid #fff;
+  border-radius: 60px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.scroll-mouse::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 1;
+  animation: scroll-mouse-wheel 2s infinite;
+  -webkit-animation: scroll-mouse-wheel 2s infinite;
+  z-index: 2;
+}
+
+@keyframes scroll-mouse-wheel {
+  to {
+    opacity: 0;
+    top: 60px;
+  }
 }
 
 @media only screen and (max-width: 1350px) {

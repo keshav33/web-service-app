@@ -1,13 +1,17 @@
 import React from "react";
 import "../../style/home.css";
-import Projects from "./Projects";
 import WhyUS from "./WhyUs";
+import { useNavigate } from "react-router-dom";
+import OurServices from "./OurServices";
 
 const Home = () => {
-  const scrollToProjects = () => {
-    const projectsElement = document.getElementById("projects");
+  const navigate = useNavigate();
+
+  const scrollToOurServices = () => {
+    const projectsElement = document.getElementById("our-services");
     projectsElement?.scrollIntoView({ behavior: "smooth" });
   };
+
   return (
     <div>
       <div className="home-container justifyCenter alignCenter">
@@ -21,15 +25,23 @@ const Home = () => {
           </h2>
         </div>
         <div className="home-gradient-splash" />
-        <button
-          className="home-view-projects-button marginTop100"
-          onClick={scrollToProjects}
-        >
-          Have a glimpse of our work
-        </button>
+        <div className="home-projects-button-container marginTop100">
+          <button
+            className="home-view-projects-button"
+            onClick={() => navigate("/projects")}
+          >
+            Have a glimpse of our work
+          </button>
+          <div className="home-projects-button-divider">
+            {"-OR-"}
+          </div>
+          <div className="scroll-mouse" onClick={scrollToOurServices}></div>
+        </div>
       </div>
-      <Projects />
-      <div className="marginTop60">
+      <div className="marginTop80">
+        <OurServices />
+      </div>
+      <div className="marginTop80">
         <WhyUS />
       </div>
       <div className="marginTop80">
@@ -38,6 +50,7 @@ const Home = () => {
         </h2>
         <button
           className="home-pricing-button marginBottom80"
+          onClick={() => navigate("/pricing")}
         >
           Check out our pricing
         </button>

@@ -1,0 +1,96 @@
+.our-services-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 60vw;
+  height: 400px;
+  background: #232323c2;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 15px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+
+.our-services-card::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-45deg, #ce225a, #523adf, #181818);
+  transform: translate3d(0px, 20px, 0) scale(1);
+  filter: blur(40px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
+}
+
+.our-services-card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  border-radius: inherit;
+}
+
+.our-services-card-content-title {
+  margin-top: 60px;
+  font-size: 54px;
+  font-weight: 600;
+  font-family: Archivo Black, sans-serif;
+  color: #fff;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+.our-services-card-content-description {
+  margin-top: 60px;
+  font-size: 22px;
+  font-weight: 200;
+  font-family: Archivo Black, sans-serif;
+  color: #fff;
+  z-index: 2;
+  width: 80%;
+  opacity: 0.8;
+}
+
+.our-services-card-hidden {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+@media (prefers-reduced-motion) {
+  .our-services-card-hidden {
+    transition: none;
+  }
+}
+
+.our-services-card-show {
+  opacity: 1;
+}
+
+.our-services-card-pricing-button {
+  font-family: Teko, sans-serif;
+  color: #fff;
+  background-color: transparent;
+  border-style: solid;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  font-weight: 400;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.our-services-card-pricing-button:hover {
+  color: #181818;
+  background-color: #fff;
+}

@@ -3,7 +3,6 @@ import {
   Form,
   FormField,
   FormGroup,
-  FormTextArea,
   Input,
   TextArea,
 } from "semantic-ui-react";

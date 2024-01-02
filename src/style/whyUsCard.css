@@ -1,11 +1,11 @@
 .why-us-card {
   width: 400px;
   height: 400px;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   position: relative;
   z-index: 1;
-  background: inherit;
+  background: #232323c2;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 15px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -14,16 +14,16 @@
 
 .why-us-card:before {
   content: "";
-  position: absolute;
-  background: inherit;
   z-index: -1;
+  position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
-  filter: blur(10px);
-  margin: -20px;
+  left: 0;
+  filter: blur(70px);
+  opacity: var(0.7);
+  transition: opacity 0.3s;
+  border-radius: inherit;
 }
 
 .why-us-card-content-title {

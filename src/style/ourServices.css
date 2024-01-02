@@ -1,0 +1,28 @@
+.our-services-heading-conatiner {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: 20vw;
+}
+
+.our-services-heading {
+  color: #fff;
+  text-align: left;
+  letter-spacing: 0;
+  font-family: Teko, sans-serif;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  position: relative;
+  opacity: 0.8;
+}
+
+.our-services-cards-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
