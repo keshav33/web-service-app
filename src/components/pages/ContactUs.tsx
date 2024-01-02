@@ -17,25 +17,29 @@ const ContactUs = () => {
         <Form className="contact-us-form">
           <FormGroup widths="equal">
             <FormField
+              icon="user"
+              iconPosition="left"
               control={Input}
-              label="First name"
               placeholder="First name"
             />
             <FormField
+              icon="user"
+              iconPosition="left"
               control={Input}
-              label="Last name"
               placeholder="Last name"
             />
           </FormGroup>
           <FormField
-            control={TextArea}
-            label="About"
-            placeholder="Tell us more about you..."
+            icon="mail"
+            iconPosition="left"
+            control={Input}
+            placeholder="joe@schmoe.com"
           />
           <FormField
-            control={Input}
-            label="Email"
-            placeholder="joe@schmoe.com"
+            icon="edit"
+            iconPosition="left"
+            control={TextArea}
+            placeholder="Tell us more about you..."
           />
         </Form>
         <button className="contact-us-button">Contact us</button>

@@ -12,13 +12,14 @@
   text-align: left;
   letter-spacing: 0;
   font-family: Archivo Black, sans-serif;
-  font-size: 50px;
+  font-size: 82px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 56px;
+  font-weight: 600;
+  line-height: 90px;
   position: relative;
   z-index: 2;
   width: 80%;
+  opacity: 0.6;
 }
 
 .home-subheading {
@@ -26,13 +27,14 @@
   text-align: left;
   letter-spacing: 0;
   font-family: Archivo Black, sans-serif;
-  font-size: 30px;
+  font-size: 32px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 56px;
   position: relative;
   z-index: 2;
   width: 60%;
+  opacity: 0.8;
 }
 
 .home-gradient-splash {
@@ -113,7 +115,8 @@
   z-index: 2;
   position: relative;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 30px;
+  padding: 10px;
 }
 
 .home-view-projects-button:hover {

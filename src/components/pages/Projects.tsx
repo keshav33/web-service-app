@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import ProjectCard from "../shared/ProjectCard";
 import "../../style/projects.css";
 
-const dummyProjects = [
+const projects = [
   {
     projectName: "Project 1",
     description:
@@ -48,10 +48,11 @@ const Projects = () => {
       <div className="projects-heading-conatiner">
         <h2 className="projects-heading">Some of our crafts!</h2>
       </div>
-      {dummyProjects.map((projectDetails) => {
+      {projects.map((projectDetails, index) => {
         return (
           <ProjectCard
             key={projectDetails.projectName}
+            index={index}
             projectName={projectDetails.projectName}
             description={projectDetails.description}
             backgroundImage={projectDetails.backgroundImage}

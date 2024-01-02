@@ -8,12 +8,13 @@
   text-align: left;
   letter-spacing: 0;
   font-family: Teko, sans-serif;
-  font-size: 50px;
+  font-size: 62px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 56px;
+  font-weight: 600;
+  line-height: 60px;
   position: relative;
   z-index: 2;
+  opacity: 0.8;
 }
 
 .contact-us-gradient-splash {
@@ -91,7 +92,7 @@
   z-index: 2;
   position: relative;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 32px;
 }
 
 .contact-us-button:hover {
@@ -105,4 +106,28 @@
 
 .ui.form .field > label {
   color: #fff !important;
+}
+
+.ui.form textarea,
+.ui.input {
+  min-width: 371px !important;
+  border-radius: 14px !important;
+  background-color: #2c3035 !important;
+  color: #fafafa !important;
+  padding: 10px 12px 10px 24px !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}
+
+.ui.form .field .ui.input input,
+.ui.form .fields .field .ui.input input {
+  width: 180px !important;
+  background-color: transparent !important;
+  padding-left: 12px !important;
+  border: 0 !important;
+  outline: 0 !important;
+  color: #fff !important;
+}
+
+.ui.form textarea:focus {
+  border-color: transparent !important;
 }
