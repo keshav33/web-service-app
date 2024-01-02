@@ -1,6 +1,7 @@
 import React from "react";
 import "../../style/home.css";
 import Projects from "./Projects";
+import WhyUS from "./WhyUs";
 
 const Home = () => {
   const scrollToProjects = () => {
@@ -28,6 +29,19 @@ const Home = () => {
         </button>
       </div>
       <Projects />
+      <div className="marginTop60">
+        <WhyUS />
+      </div>
+      <div className="marginTop80">
+        <h2 className="join-us-heading">
+          Are you ready to roll with us?
+        </h2>
+        <button
+          className="home-pricing-button marginBottom80"
+        >
+          Check out our pricing
+        </button>
+      </div>
     </div>
   );
 };

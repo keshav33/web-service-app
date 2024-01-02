@@ -30,6 +30,12 @@ const ContactUs = () => {
             />
           </FormGroup>
           <FormField
+            icon="phone"
+            iconPosition="left"
+            control={Input}
+            placeholder="+91-XXXXXXXXXX"
+          />
+          <FormField
             icon="mail"
             iconPosition="left"
             control={Input}

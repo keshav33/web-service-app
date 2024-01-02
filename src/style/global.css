@@ -2,34 +2,52 @@
 @import url("https://fonts.googleapis.com/css?family=Archivo");
 
 :root {
-    --navbar-height: 80px;
-    --footer-height: 60px;
+  --navbar-height: 80px;
+  --footer-height: 60px;
+}
+
+* {
+  scroll-margin-top: var(--navbar-height);
 }
 
 .root-container {
-    min-height: 100vh;
-    min-width: 100vw;
-    background-color: #181818;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #181818;
 }
 
-
 .flexColumn {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .justifyCenter {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .alignCenter {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .flexSpaceAround {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
+.marginTop40 {
+  margin-top: 40px;
+}
+
+.marginTop60 {
+  margin-top: 60px;
+}
+
+.marginTop80 {
+  margin-top: 80px;
+}
+
+.marginBottom80 {
+  margin-bottom: 80px;
+}

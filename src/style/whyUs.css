@@ -1,0 +1,38 @@
+.why-us-heading-conatiner {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: 20vw;
+}
+
+.why-us-heading {
+  color: #fff;
+  text-align: left;
+  letter-spacing: 0;
+  font-family: Teko, sans-serif;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  position: relative;
+  opacity: 0.8;
+}
+
+.why-us-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.why-us-cards-container::after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(-45deg, #ce225a, #523adf, #181818);
+  transform: translate3d(0px, 20px, 0) scale(1);
+  inset: -0.5rem;
+  filter: blur(40px);
+  opacity: 0.4;
+}
