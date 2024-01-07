@@ -5,15 +5,21 @@
   height: var(--navbar-height);
   background-color: #181818;
   z-index: 5;
+  margin-bottom: 60px;
 }
 
 .navbar-brand-container {
   color: #fff;
   letter-spacing: 0;
-  padding-top: 30px;
   font-family: Teko, sans-serif;
   font-size: 40px;
   font-weight: 400;
+  cursor: pointer;
+}
+
+.brand-logo {
+  width: 280px;
+  margin: 16px 0px;
   cursor: pointer;
 }
 

@@ -20,7 +20,7 @@ const Home = () => {
             Transforming web the way it should be.
           </h1>
           <h2 className="home-subheading">
-            TeknoMonk crafts your ideas to reality with ease so that you can
+            RippleCurve crafts your ideas to reality with ease so that you can
             take a fresh breeze
           </h2>
         </div>

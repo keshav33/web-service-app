@@ -23,11 +23,21 @@
   bottom: 0;
   left: 0;
   background: linear-gradient(-45deg, #ce225a, #523adf, #181818);
-  transform: translate3d(0px, 20px, 0) scale(1);
+  transform: translate3d(0px, 0px, 0) scale(1);
   filter: blur(70px);
   opacity: var(0.7);
   transition: opacity 0.3s;
   border-radius: inherit;
+  animation: projectCard 2s ease infinite alternate-reverse;
+}
+
+@keyframes projectCard {
+  0% {
+    filter: blur(50px);
+  }
+  100% {
+    filter: blur(70px);
+  }
 }
 
 .project-card-background-container::after {
@@ -50,8 +60,8 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 900px;
-  height: 500px;
+  width: 750px;
+  height: 400px;
   transition: all 0.3s;
   border-radius: 10px;
 }
@@ -107,4 +117,44 @@
 
 .project-card-show {
   opacity: 1;
+}
+
+@media (max-width: 1800px) {
+  .project-card-background {
+    width: 680px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .project-card-background {
+    width: 550px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .project-card-background {
+    width: 60vw;
+    height: 350px;
+  }
+  .project-card-image-pan-left {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0px;
+  }
+  .project-card-image-pan-right {
+    flex-direction: column-reverse;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 200px 0px;
+  }
+  .project-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
 }

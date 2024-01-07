@@ -19,8 +19,8 @@ const ProjectCard = ({
   }
   if (isImagePanToLeft(index)) {
     return (
-      <div className="project-card project-card-hidden">
-        <div>
+      <div className="project-card project-card-image-pan-right project-card-hidden">
+        <div className="project-card-content">
           <div className="project-card-content-name">{projectName}</div>
           <div className="project-card-content-description">{description}</div>
           <button className="project-card-view-more-details-button">
@@ -38,7 +38,7 @@ const ProjectCard = ({
     )
   }
   return (
-    <div className="project-card project-card-hidden">
+    <div className="project-card project-card-image-pan-left project-card-hidden">
       <div className="project-card-background-container">
         <img
           className="project-card-background"
@@ -46,7 +46,7 @@ const ProjectCard = ({
           alt="Project Info"
         />
       </div>
-      <div>
+      <div className="project-card-content">
         <div className="project-card-content-name">{projectName}</div>
         <div className="project-card-content-description">{description}</div>
         <button className="project-card-view-more-details-button">

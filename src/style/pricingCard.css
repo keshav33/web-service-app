@@ -1,18 +1,18 @@
-.our-services-card {
+.pricing-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 60vw;
-  height: 400px;
+  width: 20vw;
+  height: 600px;
   background: #232323c2;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 15px;
   border-radius: 10px;
   position: relative;
   z-index: 1;
   align-items: center;
 }
 
-.our-services-card::before {
+.pricing-card::before {
   content: "";
   z-index: -1;
   position: absolute;
@@ -20,16 +20,15 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(-45deg, #ce225a, #523adf, #181818);
-  transform: translate3d(0px, 20px, 0) scale(1);
+  background: linear-gradient(-45deg, #ce225ba2, #533adfa2, #181818a2);
+  transform: translate3d(0px, 0px, 0) scale(1);
   filter: blur(40px);
-  opacity: var(0.7);
-  transition: opacity 0.3s;
+  opacity: 0.5;
   border-radius: inherit;
-  animation: ourServiceCard 2s ease infinite alternate-reverse;
+  animation: pricingCard 2s ease infinite alternate-reverse;
 }
 
-@keyframes ourServiceCard {
+@keyframes pricingCard {
   0% {
     filter: blur(20px);
   }
@@ -38,19 +37,7 @@
   }
 }
 
-.our-services-card::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: inherit;
-  border-radius: inherit;
-}
-
-.our-services-card-content-title {
+.pricing-card-content-title {
   margin-top: 60px;
   font-size: 54px;
   font-weight: 600;
@@ -60,7 +47,7 @@
   opacity: 0.8;
 }
 
-.our-services-card-content-description {
+.pricing-card-content-description {
   margin-top: 60px;
   font-size: 22px;
   font-weight: 200;
@@ -71,22 +58,7 @@
   opacity: 0.8;
 }
 
-.our-services-card-hidden {
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
-@media (prefers-reduced-motion) {
-  .our-services-card-hidden {
-    transition: none;
-  }
-}
-
-.our-services-card-show {
-  opacity: 1;
-}
-
-.our-services-card-pricing-button {
+.contact-us-button-button {
   font-family: Teko, sans-serif;
   color: #fff;
   background-color: transparent;
@@ -100,7 +72,7 @@
   padding: 10px;
 }
 
-.our-services-card-pricing-button:hover {
+.contact-us-button-button:hover {
   color: #181818;
   background-color: #fff;
 }

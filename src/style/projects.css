@@ -17,3 +17,10 @@
   position: relative;
   opacity: 0.8;
 }
+
+@media (max-width: 1300px) {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

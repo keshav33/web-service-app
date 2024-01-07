@@ -44,7 +44,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="alignCenter flexColumn" id="projects">
+    <div className="alignCenter flexColumn projects-container" id="projects">
       <div className="projects-heading-conatiner">
         <h2 className="projects-heading">Some of our crafts!</h2>
       </div>

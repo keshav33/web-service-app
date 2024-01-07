@@ -1,12 +1,19 @@
 import React from "react";
 import "../../style/navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import brandLogo from "../../assets/icons/brandLogo.svg";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div className="navbar-container flexSpaceAround">
       <div className="navbar-brand-container">
-        <Link to="/">TeknoMonk</Link>
+        <img
+          className="brand-logo"
+          src={brandLogo}
+          alt="brandlogo"
+          onClick={() => navigate("/")}
+        />
       </div>
       <div className="navbar-link-container">
         <div className="navbar-link">

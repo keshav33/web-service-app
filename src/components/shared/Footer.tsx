@@ -9,7 +9,7 @@ const Footer = () => {
       <hr className="footer-separator" />
       <div className="footer-container">
         <div className="footer-copyright-container">
-          @2024 TeknoMonk. All Rights Reserved.
+          @2024 RippleCurve. All Rights Reserved.
         </div>
         <div className="social-media-icon-container">
           <img
